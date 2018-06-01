@@ -9,8 +9,8 @@ public class test_final {
 		 
 		 long startTime = System.nanoTime();
 		 //Encryption
-		 File srcFile = new File("/home/softia/prevusp_base.sql.tar.gz");
-		 File destFile = new File("/home/softia/prevusp_base.sql.tar.gz.encrypt");
+		 File srcFile = new File("/home/cvrignaud/file.sql.tar.gz");
+		 File destFile = new File("/home/cvrignaud/file.sql.tar.gz.encrypt");
 		 String password = "124984618168486468dqdniopqfniqgnios<vnevs<e4v64s<v86s<1c86c18<86cs1v6<81bbiobcioneo<jc,oiscn";
 		 FileEncryptor fe = new FileEncryptor(password);
 		 fe.encrypt(srcFile, destFile);
@@ -25,7 +25,7 @@ public class test_final {
 		 
 		 startTime = System.nanoTime();
 		 //Decryption
-		 File newFile = new File("/home/softia/prevusp_base.sql.tar.gz.new");
+		 File newFile = new File("/home/cvrignaud/file.sql.tar.gz.new");
 		 fe.decrypt(destFile, newFile);
 		 
 		 endTime   = System.nanoTime();
